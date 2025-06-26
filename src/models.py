@@ -65,3 +65,21 @@ class MediaType(enum.Enum):
 class Media(db.Model):
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     type: Mapped[MediaType] = mapped_column(Enum(MediaType), nullable=False)
+
+    def serialize(self):
+        return {
+            "id": self.id,
+            "type": self.type,
+        }
+
+class Follow(db.Model):
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    user_from_id: Mapped[int] = mapped_column(Integer, ForeignKey('user.id'))
+    user_to_id: Mapped[int] = mapped_column(Integer, ForeignKey('user.id'))
+
+    def serialize(self):
+        return{
+            "id": self.id,
+            "user_from_id": self.user_from_id,
+            "user_to_id": self.user_to_id
+        }
