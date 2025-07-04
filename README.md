@@ -1,6 +1,9 @@
 <a href="https://www.breatheco.de"><img height="280" align="right" src="https://github.com/4GeeksAcademy/flask-rest-hello/blob/main/docs/assets/badge.png?raw=true"></a>
+
+^---Updated Result
+
 <img width="996" alt="Screenshot 2025-06-26 at 17 30 56" src="https://github.com/user-attachments/assets/e910f8bc-6f3d-4b40-a2d9-a3b56bf50832" />
-^---Result.
+^---Result (outdated; had knowledge gaps).
 
 # Flask Boilerplate for Junior Developers
 
